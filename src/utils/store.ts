@@ -1,8 +1,6 @@
 
 import { configureStore } from '@reduxjs/toolkit'
 import studentReducer from '../features/student/studentSlice';
-import coursesReducer from '../features/courses/coursesSlice';
-
 export interface Course {
   id: number;
   name: string;
@@ -26,7 +24,6 @@ export interface Course {
 export const store = configureStore({
     reducer: {
     student : studentReducer,
-    courses : coursesReducer
     },
   })
 
